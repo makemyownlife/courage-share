@@ -6,6 +6,4 @@ package com.courage.smart.mq.server;
  */
 public class MainApplication {
 
-
-
 }

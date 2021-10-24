@@ -11,4 +11,18 @@
 
     <artifactId>smart-mq-remoting</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>bolt</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+    </dependencies>
+
 </project>

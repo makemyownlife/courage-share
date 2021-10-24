@@ -19,5 +19,53 @@
         <module>smart-mq-common</module>
     </modules>
 
+    <properties>
+        <affinity.version>3.1.7</affinity.version>
+        <asm.version>6.0</asm.version>
+        <bolt.version>1.6.4</bolt.version>
+        <commons.compress.version>1.21</commons.compress.version>
+        <commons.io.version>2.8.0</commons.io.version>
+        <commons.lang.version>2.6</commons.lang.version>
+        <disruptor.version>3.3.7</disruptor.version>
+        <rocksdb.version>6.22.1.1</rocksdb.version>
+        <slf4j.version>1.7.21</slf4j.version>
+    </properties>
+
+    <dependencyManagement>
+
+        <dependencies>
+            <!-- bolt -->
+            <dependency>
+                <groupId>com.alipay.sofa</groupId>
+                <artifactId>bolt</artifactId>
+                <version>${bolt.version}</version>
+            </dependency>
+            <!-- log facade -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <!-- disruptor -->
+            <dependency>
+                <groupId>com.lmax</groupId>
+                <artifactId>disruptor</artifactId>
+                <version>${disruptor.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons.io.version}</version>
+            </dependency>
+            <!-- rocksdb -->
+            <dependency>
+                <groupId>org.rocksdb</groupId>
+                <artifactId>rocksdbjni</artifactId>
+                <version>${rocksdb.version}</version>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
+
 
 </project>
