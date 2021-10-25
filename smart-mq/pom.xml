@@ -17,6 +17,7 @@
         <module>smart-mq-remoting</module>
         <module>smart-mq-server</module>
         <module>smart-mq-common</module>
+        <module>smart-mq-distribution</module>
     </modules>
 
     <properties>
